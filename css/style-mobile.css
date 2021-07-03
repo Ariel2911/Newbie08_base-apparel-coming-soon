@@ -3,4 +3,84 @@
     --Soft-Red: hsl(0, 93%, 68%);
     --Dark-Grayish-Red: hsl(0, 6%, 24%);
 }
+html{
+    font-size: 62.5%;
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.6rem;
+    background: linear-gradient(135deg, hsl(0, 0%, 100%) , hsl(0, 100%, 98%));
+}
+.main{
+    max-width: 375px;
+    display: grid;    
+}
+.main__logo{
+    height: 8vh;
+}
+.main__logo-img{
+    width: 100px;
+    height: 20px;
+    margin: 28px 32px;
+}
 
+.main__body{
+    text-align: center;
+    padding: 32px;
+    color: var(--Desaturated-Red);
+}
+.main__body-title{
+    font-size: 40px;
+    font-weight: 300;
+    margin: 0;
+    letter-spacing: 9px;
+    line-height: 42px;
+    text-transform: uppercase;
+}
+.main__body-title--span{
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 12px;
+    color: black;
+}
+.main__body-text{
+    font-size: 14px;
+    line-height: 22px;
+}
+.main__body-form{
+    position: relative;
+    height: 48px;
+    margin: 32px auto;
+    border-radius: 23px;
+    border: 1px solid var(--Desaturated-Red);
+}
+.main__body-form-email{
+    background-color: transparent;
+    line-height: 40px;
+    max-width: 300px;
+    border: none;    
+    font-family: inherit;
+    margin-left: -65px ;
+}
+.main__body-form-email::placeholder{
+    color: var(--Desaturated-Red);
+}
+.main__body-form-submit{
+    position: absolute;
+    top: -1px;
+    right: -4px;
+    width: 64px;
+    height: 48px;
+    color: white;
+    background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    border: none;
+    border-radius: 23px;
+    box-shadow: 0px 15px 32px -8px hsl(0, 74%, 74%);
+}
