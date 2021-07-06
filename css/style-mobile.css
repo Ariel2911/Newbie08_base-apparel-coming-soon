@@ -19,26 +19,25 @@ body{
 }
 .main{    
     display: grid; 
+    grid-template-rows: 84px 250px 1fr;
     max-width: 375px;  
     background: linear-gradient(135deg, hsl(0, 0%, 100%) , hsl(0, 100%, 98%)); 
 }
-.main__logo{
-    height: 8vh;
-}
+
 .main__logo-img{
     width: 100px;
-    height: 20px;
     margin: 28px 32px;
 }
 .main__body{
     text-align: center;
-    padding: 32px;
+    padding: 0 32px;
     color: var(--Desaturated-Red);
 }
 .main__body-title{
     font-size: 40px;
     font-weight: 300;
-    margin: 0;
+    margin-top: 64px;
+    margin-bottom: 16px;
     letter-spacing: 9px;
     line-height: 42px;
     text-transform: uppercase;
@@ -52,18 +51,18 @@ body{
 .main__body-text{
     font-size: 14px;
     line-height: 22px;
+    margin-top: 0px;
+    margin-bottom: 32px;
 }
 .main__body-form{
     position: relative;
-    height: 48px;
-    margin: 32px auto;
+    height: 48px;    
     border-radius: 23px;
     border: 1px solid var(--Desaturated-Red);
 }
 .main__body-form-email{
     background-color: transparent;
-    line-height: 42px;
-    width: 72%;
+    line-height: 42px;    
     border: none;    
     font-family: inherit;
     margin-left: -44px ;
