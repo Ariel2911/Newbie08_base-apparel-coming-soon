@@ -23,7 +23,6 @@ body{
     max-width: 375px;  
     background: linear-gradient(135deg, hsl(0, 0%, 100%) , hsl(0, 100%, 98%)); 
 }
-
 .main__logo-img{
     width: 100px;
     margin: 28px 32px;
@@ -59,6 +58,13 @@ body{
     height: 48px;    
     border-radius: 23px;
     border: 1px solid var(--Desaturated-Red);
+}
+.main__body-form--error::before {
+    content: 'Ingrese una dirección de correo electrónico';
+    position: absolute;
+    bottom: -35px;
+    left: 0;
+    color: var(--soft-red);
 }
 .main__body-form-email{
     background-color: transparent;
