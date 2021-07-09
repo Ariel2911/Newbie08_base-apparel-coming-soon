@@ -12,7 +12,7 @@ html{
 body{
     display: flex;
     justify-content: center;
-    min-height: 100vh;
+    height: 100vh;
     margin: 0;
     font-family: 'Josefin Sans', sans-serif;
     font-size: 1.6rem;    
@@ -20,12 +20,15 @@ body{
 .main{    
     display: grid; 
     grid-template-rows: 84px 250px 1fr;
-    max-width: 375px;  
+    width: max(320px, 375px); 
     background: linear-gradient(135deg, hsl(0, 0%, 100%) , hsl(0, 100%, 98%)); 
 }
 .main__logo-img{
     width: 100px;
     margin: 28px 32px;
+}
+.main__picture{   
+    overflow: hidden;
 }
 .main__body{
     text-align: center;
@@ -33,7 +36,7 @@ body{
     color: var(--Desaturated-Red);
 }
 .main__body-title{
-    font-size: 40px;
+    font-size: 4rem;
     font-weight: 300;
     margin-top: 64px;
     margin-bottom: 16px;
@@ -42,13 +45,13 @@ body{
     text-transform: uppercase;
 }
 .main__body-title--span{
-    font-size: 40px;
+    font-size: 4rem;
     font-weight: 700;
     letter-spacing: 12px;
     color: black;
 }
 .main__body-text{
-    font-size: 14px;
+    font-size: 1.4rem;
     line-height: 22px;
     margin-top: 0px;
     margin-bottom: 32px;
@@ -60,18 +63,27 @@ body{
     border: 1px solid var(--Desaturated-Red);
 }
 .main__body-form--error::before {
-    content: 'Ingrese una dirección de correo electrónico';
+    content: 'Please provide a valid email';
     position: absolute;
-    bottom: -35px;
-    left: 0;
+    bottom: -26px;
+    left: 30px;
+    font-size: 1.4rem;
+    letter-spacing: -0.5px;
     color: var(--soft-red);
 }
+.main__body-form--error::after {
+    content: url(/assets/icons/icon-error.svg);
+    position: absolute;
+    right: 24%;
+    top: 24%;
+}
 .main__body-form-email{
-    background-color: transparent;
-    line-height: 42px;    
+    width: 72%;
     border: none;    
     font-family: inherit;
+    line-height: 42px; 
     margin-left: -44px ;
+    background-color: transparent;
 }
 .main__body-form-email::placeholder{
     color: var(--Desaturated-Red);
@@ -82,9 +94,9 @@ body{
     right: 0;
     width: 64px;
     height: 48px;
-    color: white;
-    background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
     border: none;
     border-radius: 23px;
+    color: white;
+    background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
     box-shadow: 0px 15px 32px -8px hsl(0, 74%, 74%);
 }

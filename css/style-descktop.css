@@ -1,62 +1,56 @@
 .main{        
     grid-template-columns: 53% 47%;
     grid-template-rows: 23% 1fr;
-    max-width: 1440px; 
+    width: max(10vw, 1440px); 
     max-height: 800px;
-    padding-left:9%;
+    padding-left:130px;
     background-image: url(/assets/image/bg-pattern-desktop.svg); 
 }
 .main__logo-img{
     width: 150px;
-    height: auto;
-    margin: 64px 32px;
+    margin-top: 64px;
 }
 .main__picture{
     grid-column: 2/3;
-    grid-row: 1/3;
-    overflow-x: hidden;
+    grid-row: 1/3;    
 }
-.main__picture-img{
-    display: block;
+.main__picture-img{    
     object-fit: cover;
 }
 .main__body{
-    text-align: start;     
-    width: 73%;  
+    text-align: start;    
 }
 .main__body-title{
-    font-size: 60px;
-    font-weight: 300;
-    margin: 0px;
+    font-size: 6rem;
+    margin: 0;
     margin-top: 46px;
     margin-bottom: 20px;
     letter-spacing: 20px;
     line-height: 68px;
 }
 .main__body-title--span{
-    font-size: 64px;
-    font-weight: 700;
+    font-size: 6.4rem;
     letter-spacing: 16px;
-    color: black;
 }
 .main__body-text{
-    font-size: 16px;
+    width: 432px;
+    font-size: 1.6rem;
     line-height: 28px;
     margin: 10px 0px 40px;
 }
-.main__body-form{  
+.main__body-form{ 
+    width: 432px; 
     height: 56px;
     border-radius: 28px;
     border: 2px solid var(--Desaturated-Red);
 }
 .main__body-form-email{
     line-height: 48px;
-    font-size: 16px;
-    margin-left: 24px ;
+    font-size: 1.6rem;
+    margin-left: 24px;
 }
 .main__body-form-submit{
     top: -2px;
-    right: 0;
     width: 100px;
     height: 56px;
     border-radius: 32px;
