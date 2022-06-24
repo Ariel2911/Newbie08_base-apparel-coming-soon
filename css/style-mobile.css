@@ -1,102 +1,102 @@
-:root{
-    --Desaturated-Red: hsl(0, 36%, 70%);
-    --Soft-Red: hsl(0, 93%, 68%);
-    --Dark-Grayish-Red: hsl(0, 6%, 24%);
+:root {
+  --Desaturated-Red: hsl(0, 36%, 70%);
+  --Soft-Red: hsl(0, 93%, 68%);
+  --Dark-Grayish-Red: hsl(0, 6%, 24%);
 }
-html{
-    font-size: 62.5%;
+html {
+  font-size: 62.5%;
 }
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
-body{
-    display: flex;
-    justify-content: center;
-    height: 100vh;
-    margin: 0;
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 1.6rem;    
+body {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.6rem;
 }
-.main{    
-    display: grid; 
-    grid-template-rows: 84px 250px 1fr;
-    width: max(320px, 375px); 
-    background: linear-gradient(135deg, hsl(0, 0%, 100%) , hsl(0, 100%, 98%)); 
+.main {
+  display: grid;
+  grid-template-rows: 84px 250px 1fr;
+  width: max(320px, 375px);
+  background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
 }
-.main__logo-img{
-    width: 100px;
-    margin: 28px 32px;
+.main__logo-img {
+  width: 100px;
+  margin: 28px 32px;
 }
-.main__picture{   
-    overflow: hidden;
+.main__picture {
+  overflow: hidden;
 }
-.main__body{
-    text-align: center;
-    padding: 0 32px;
-    color: var(--Desaturated-Red);
+.main__body {
+  text-align: center;
+  padding: 0 32px;
+  color: var(--Desaturated-Red);
 }
-.main__body-title{
-    font-size: 4rem;
-    font-weight: 300;
-    margin-top: 64px;
-    margin-bottom: 16px;
-    letter-spacing: 9px;
-    line-height: 42px;
-    text-transform: uppercase;
+.main__body-title {
+  font-size: 4rem;
+  font-weight: 300;
+  margin-top: 64px;
+  margin-bottom: 16px;
+  letter-spacing: 9px;
+  line-height: 42px;
+  text-transform: uppercase;
 }
-.main__body-title--span{
-    font-size: 4rem;
-    font-weight: 700;
-    letter-spacing: 12px;
-    color: black;
+.main__body-title--span {
+  font-size: 4rem;
+  font-weight: 700;
+  letter-spacing: 12px;
+  color: black;
 }
-.main__body-text{
-    font-size: 1.4rem;
-    line-height: 22px;
-    margin-top: 0px;
-    margin-bottom: 32px;
+.main__body-text {
+  font-size: 1.4rem;
+  line-height: 22px;
+  margin-top: 0px;
+  margin-bottom: 32px;
 }
-.main__body-form{
-    position: relative;
-    height: 48px;    
-    border-radius: 23px;
-    border: 1px solid var(--Desaturated-Red);
+.main__body-form {
+  position: relative;
+  height: 48px;
+  border-radius: 23px;
+  border: 1px solid var(--Desaturated-Red);
 }
 .main__body-form--error::before {
-    content: 'Please provide a valid email';
-    position: absolute;
-    bottom: -26px;
-    left: 30px;
-    font-size: 1.4rem;
-    letter-spacing: -0.5px;
-    color: var(--soft-red);
+  content: 'Please provide a valid email';
+  position: absolute;
+  bottom: -26px;
+  left: 30px;
+  font-size: 1.4rem;
+  letter-spacing: -0.5px;
+  color: var(--soft-red);
 }
 .main__body-form--error::after {
-    content: url('../assets/icons/icon-error.svg');
-    position: absolute;
-    right: 24%;
-    top: 24%;
+  content: url('../assets/icons/icon-error.svg');
+  position: absolute;
+  right: 24%;
+  top: 24%;
 }
-.main__body-form-email{
-    width: 72%;
-    border: none;    
-    font-family: inherit;
-    line-height: 42px; 
-    margin-left: -44px ;
-    background-color: transparent;
+.main__body-form-email {
+  width: 72%;
+  border: none;
+  font-family: inherit;
+  line-height: 42px;
+  margin-left: -44px;
+  background-color: transparent;
 }
-.main__body-form-email::placeholder{
-    color: var(--Desaturated-Red);
+.main__body-form-email::placeholder {
+  color: var(--Desaturated-Red);
 }
-.main__body-form-submit{
-    position: absolute;
-    top: -1px;
-    right: 0;
-    width: 64px;
-    height: 48px;
-    border: none;
-    border-radius: 23px;
-    color: white;
-    background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
-    box-shadow: 0px 15px 32px -8px hsl(0, 74%, 74%);
+.main__body-form-submit {
+  position: absolute;
+  top: -1px;
+  right: -2px;
+  width: 64px;
+  height: 48px;
+  border: none;
+  border-radius: 23px;
+  color: white;
+  background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  box-shadow: 0px 15px 32px -8px hsl(0, 74%, 74%);
 }
