@@ -72,7 +72,7 @@ body{
     color: var(--soft-red);
 }
 .main__body-form--error::after {
-    content: url(/assets/icons/icon-error.svg);
+    content: url('../assets/icons/icon-error.svg');
     position: absolute;
     right: 24%;
     top: 24%;
